@@ -10,10 +10,10 @@ import (
 	"strings"
 	"time"
 
+	"github.com/ShawnHsiung/asynq/internal/base"
+	"github.com/ShawnHsiung/asynq/internal/errors"
+	"github.com/ShawnHsiung/asynq/internal/rdb"
 	"github.com/redis/go-redis/v9"
-	"github.com/hibiken/asynq/internal/base"
-	"github.com/hibiken/asynq/internal/errors"
-	"github.com/hibiken/asynq/internal/rdb"
 )
 
 // Inspector is a client interface to inspect and mutate the state of
@@ -589,7 +589,6 @@ func (i *Inspector) DeleteTask(queue, id string) error {
 		return fmt.Errorf("asynq: %v", err)
 	}
 	return nil
-
 }
 
 // RunAllScheduledTasks schedules all scheduled tasks from the given queue to run,

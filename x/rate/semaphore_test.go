@@ -8,11 +8,11 @@ import (
 	"testing"
 	"time"
 
+	"github.com/ShawnHsiung/asynq"
+	"github.com/ShawnHsiung/asynq/internal/base"
+	asynqcontext "github.com/ShawnHsiung/asynq/internal/context"
 	"github.com/go-redis/redis/v8"
 	"github.com/google/uuid"
-	"github.com/hibiken/asynq"
-	"github.com/hibiken/asynq/internal/base"
-	asynqcontext "github.com/hibiken/asynq/internal/context"
 )
 
 var (
@@ -400,8 +400,7 @@ func getRedisConnOpt(tb testing.TB) asynq.RedisConnOpt {
 	}
 }
 
-type badConnOpt struct {
-}
+type badConnOpt struct{}
 
 func (b badConnOpt) MakeRedisClient() interface{} {
 	return nil

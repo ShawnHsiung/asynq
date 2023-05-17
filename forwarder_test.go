@@ -9,10 +9,10 @@ import (
 	"testing"
 	"time"
 
+	"github.com/ShawnHsiung/asynq/internal/base"
+	"github.com/ShawnHsiung/asynq/internal/rdb"
+	h "github.com/ShawnHsiung/asynq/internal/testutil"
 	"github.com/google/go-cmp/cmp"
-	"github.com/hibiken/asynq/internal/base"
-	"github.com/hibiken/asynq/internal/rdb"
-	h "github.com/hibiken/asynq/internal/testutil"
 )
 
 func TestForwarder(t *testing.T) {

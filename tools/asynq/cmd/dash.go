@@ -10,13 +10,11 @@ import (
 	"time"
 
 	"github.com/MakeNowJust/heredoc/v2"
-	"github.com/hibiken/asynq/tools/asynq/cmd/dash"
+	"github.com/ShawnHsiung/asynq/tools/asynq/cmd/dash"
 	"github.com/spf13/cobra"
 )
 
-var (
-	flagPollInterval = 8 * time.Second
-)
+var flagPollInterval = 8 * time.Second
 
 func init() {
 	rootCmd.AddCommand(dashCmd)
