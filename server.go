@@ -18,7 +18,7 @@ import (
 	"github.com/ShawnHsiung/asynq/internal/base"
 	"github.com/ShawnHsiung/asynq/internal/log"
 	"github.com/ShawnHsiung/asynq/internal/rdb"
-	"github.com/redis/go-redis/v9"
+	"github.com/go-redis/redis/v8"
 )
 
 // Server is responsible for task processing and task lifecycle management.

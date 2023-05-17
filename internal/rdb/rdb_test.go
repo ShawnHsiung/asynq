@@ -19,10 +19,10 @@ import (
 	"github.com/ShawnHsiung/asynq/internal/errors"
 	h "github.com/ShawnHsiung/asynq/internal/testutil"
 	"github.com/ShawnHsiung/asynq/internal/timeutil"
+	"github.com/go-redis/redis/v8"
 	"github.com/google/go-cmp/cmp"
 	"github.com/google/go-cmp/cmp/cmpopts"
 	"github.com/google/uuid"
-	"github.com/redis/go-redis/v9"
 )
 
 // variables used for package testing.

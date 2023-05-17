@@ -13,8 +13,8 @@ import (
 	"github.com/ShawnHsiung/asynq/internal/base"
 	"github.com/ShawnHsiung/asynq/internal/log"
 	"github.com/ShawnHsiung/asynq/internal/rdb"
+	"github.com/go-redis/redis/v8"
 	"github.com/google/uuid"
-	"github.com/redis/go-redis/v9"
 	"github.com/robfig/cron/v3"
 )
 
